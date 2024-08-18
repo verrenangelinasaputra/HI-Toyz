@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylenew.css">
+    <title>HI-Toyz</title>
+    <link rel="icon" href="./assets-website/mascot-new-toys.png" type="image/gif" sizes="20x20">
+</head>
+<body class="background-body-kedua">
+        <header>
+            <div class="navbar-logo-menu">
+                <img src="assets-website/logo-company-hi-toyz.png" alt="">
+            </div>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <div class="navbar-logo-menu"><img src="assets-website/mascot-new-toys.png" alt=""></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery-page.html">Gallery</a></li>
+                    <li><a href="events-page.html">Events</a></li>
+                    <li class="active"><a href="register-us-page.html">Register Us</a></li>
+                </ul>
+            </nav>
+            <label for="nav_check" class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>            
+        </header>
+
+        <!-- CODINGAN DARI KELAS LAB -->
+
+        <section class = "form-register-us-hi-toyz" id = "form-register-us-hi-toyz">
+            <h2><b>Create New Account</b></h2>
+            <form method="GET" enctype="multipart/form-data">
+
+                <div class="list-pertanyaan-register">
+                    <label for="nama"><b>Nama :</b> </label>
+                    <div class="jawaban-pertanyaan">
+                        <input type="text" name="nama" id="nama" class="input">  
+                        <p style="color: red;" id = "errorname"></p>                       
+                    </div>
+                </div>
+
+                <div class="list-pertanyaan-register">
+                    <label for="email"><b>Email :</b> </label>
+                    <div class="jawaban-pertanyaan">
+                        <input type="text" name="email" id="email" class="input">
+                        <p style="color: red;" id = "erroremail"></p>                      
+                    </div>
+                </div>
+
+                <div class="list-pertanyaan-register">
+                    <label for="password"><b>Password:</b> </label>
+                    <div class="jawaban-pertanyaan">
+                        <input type="password" name="password" id="password" class="input">       
+                        <p style="color: red;" id = "errorpassword"></p>                       
+                    </div>
+                </div>
+
+                <div class="list-pertanyaan-register">
+                    <label for="confirm_password"><b>Confirm Password :</b></label>
+                    <div class="jawaban-pertanyaan">
+                        <input type="password" name = "confirm_password" id="confirm_password" class="input">   
+                        <p style="color: red;" id = "errorconfirm_password"></p>                            
+                    </div>
+                </div>
+
+                <div class="list-pertanyaan-register">
+                    <label for="date"><b>Date of Birth:</b> </label>
+                    <div class="jawaban-pertanyaan">
+                        <input type="date" name="dob" id = "dob" class="input">
+                        <p style="color: red;" id = "errordob"></p>                           
+                    </div>
+                </div>
+
+                <div class="button-eula">
+                    <input type="checkbox" id="agreement"/>
+                    <div class="container-eula">
+                        <label for ="agreement">I Accept the EULA</label>
+                        <p style="color: red;" id = "erroragreement"></p>                        
+                    </div>
+                </div>
+                
+
+                <div class = "submit" id="submit">
+                    <button type="button" onclick="validateForm()">Submit</button>            
+                </div>
+            </form>
+        </section>        
+    <script src ="javascript.js"></script>
+</body>
+</html>
